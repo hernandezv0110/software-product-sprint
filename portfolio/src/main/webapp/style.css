@@ -7,3 +7,28 @@
 #greeting-container {
   margin-top: 20px;
 }
+
+#portrait {
+    width: 400px;
+    height: auto;
+    border: 5px solid #555;
+}
+
+body {
+    background-color: rgb(228, 224, 224);
+}
+
+#factButton{
+    outline: 0;
+    color: rgb(0, 0, 0);
+    background-color: rgb(84, 204, 84);
+    border-color: black;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 16px;
+    border-radius: .25rem;
+}
