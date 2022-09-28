@@ -26,3 +26,22 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+function showFunFacts(){
+    const facts = 
+        ['I play soccer', 'I was on TV for a minute on Telemundo', 'Tacos are my favorite food',
+        'I love going on hikes', 'I love learning about cooking and investing'];
+    const fact = facts[Math.floor(Math.random() * facts.length)];
+    const factContainer = document.getElementById('greeting-container');
+    factContainer.innerText = fact;
+}
+
+async function showPlaces() {
+    const responseFromServer = await fetch('/hello');
+    const jsonData = await responseFromServer.json();
+
+    const placeText = jsonData[Math.floor(Math.random()*jsonData.length)];
+
+    const responseContainer = document.getElementById('response-container');
+    responseContainer.innerText = placeText;
+}
